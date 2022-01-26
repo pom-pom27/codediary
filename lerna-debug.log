@@ -1,0 +1,15 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'cli',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'C:\\Users\\Dababy\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: 'local-api'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath D:\FrontendProject\code-note
+3 notice filter including "cli"
+4 info filter [ 'cli' ]
+5 info Adding local-api in 1 package
+6 verbose add local-api@^1.0.0 to dependencies in cli
+7 error

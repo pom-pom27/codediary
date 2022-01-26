@@ -1,0 +1,10 @@
+.button-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+.button-wrapper:hover {
+  opacity: 1;
+}

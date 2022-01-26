@@ -1,0 +1,7 @@
+.cell-item {
+  position: relative;
+}
+.code-cell-wrapper {
+  height: 30px;
+  background-color: #37414b;
+}
