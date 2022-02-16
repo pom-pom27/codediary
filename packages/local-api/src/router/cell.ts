@@ -24,8 +24,6 @@ export const createCellRouter = (filename: string, dir: string) => {
         await fs.writeFile(fullPath, "[]", "utf-8");
         res.send([]);
       } else {
-        console.log("wawo");
-
         throw error;
       }
     }

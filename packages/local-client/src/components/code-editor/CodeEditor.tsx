@@ -20,7 +20,6 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ value, onChange }) => {
   const onClickFormat = () => {
     //get the value from editor
     const unformatted = editorRef.current.getValue();
-    console.log(unformatted);
 
     //format the value
     const formatted = prettier
