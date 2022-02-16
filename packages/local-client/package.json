@@ -1,6 +1,6 @@
 {
   "name": "@codediary/local-client",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "publishConfig": {
     "access": "public"
   },

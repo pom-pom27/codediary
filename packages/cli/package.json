@@ -1,6 +1,6 @@
 {
   "name": "codediary",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
@@ -17,10 +17,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@codediary/local-client": "^1.0.0"
+    "@codediary/local-client": "^1.0.5"
   },
   "devDependencies": {
-    "@codediary/local-api": "^1.0.4",
+    "@codediary/local-api": "^1.0.5",
     "@types/node": "^17.0.12",
     "commander": "^8.3.0",
     "esbuild": "0.8.26",
