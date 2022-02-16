@@ -17,7 +17,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@codediary/local-client": "^0.1.0"
+    "@codediary/local-client": "^1.0.0"
   },
   "devDependencies": {
     "@codediary/local-api": "^1.0.0",
