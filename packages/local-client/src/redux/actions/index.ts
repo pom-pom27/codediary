@@ -1,3 +1,4 @@
+import { Cell } from "..";
 import { ActionType } from "../action-types";
 import { CellType } from "../cell";
 
@@ -27,6 +28,10 @@ export interface StartBundleAction {
   type: ActionType.BUNDLE_START;
   payload: { cellId: string };
 }
+export interface SaveCellsError {
+  type: ActionType.SAVE_CELLS_ERROR;
+  payload: string;
+}
 
 export interface CompleteBundleAction {
   type: ActionType.BUNDLE_COMPLETE;
@@ -39,10 +44,26 @@ export interface CompleteBundleAction {
   };
 }
 
+export interface FetchCellsAction {
+  type: ActionType.FETCH_CELLS;
+}
+export interface FetchCellsCompleteAction {
+  type: ActionType.FETCH_CELLS_COMPLETE;
+  payload: Cell[];
+}
+export interface FetchCellErrorAction {
+  type: ActionType.FETCH_CELLS_ERROR;
+  payload: string;
+}
+
 export type Action =
   | MoveCellAction
   | UpdateCellAction
   | DeleteCellAction
   | InsertCellAfterAction
   | StartBundleAction
-  | CompleteBundleAction;
+  | CompleteBundleAction
+  | SaveCellsError
+  | FetchCellsAction
+  | FetchCellsCompleteAction
+  | FetchCellErrorAction;

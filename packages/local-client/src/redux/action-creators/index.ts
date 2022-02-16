@@ -1,4 +1,6 @@
+import axios from "axios";
 import { Dispatch } from "redux";
+import { Cell, RootState } from "..";
 import bundler from "../../utils/bundler";
 
 import { ActionType } from "../action-types";
@@ -57,3 +59,33 @@ export const startBundling =
       payload: { cellId, result },
     });
   };
+
+export const saveCells =
+  () => async (dispatch: Dispatch<Action>, getState: () => RootState) => {
+    const { data, order } = getState().cells;
+
+    const cells = order.map((id) => data[id]);
+
+    try {
+      await axios.post("/cells", { cells });
+    } catch (error) {
+      if (error instanceof Error) {
+        dispatch({ type: ActionType.SAVE_CELLS_ERROR, payload: error.message });
+      }
+    }
+  };
+
+export const fetchCells = () => async (dispatch: Dispatch<Action>) => {
+  dispatch({ type: ActionType.FETCH_CELLS });
+  try {
+    const api = await axios.get("/cells");
+
+    const cells: Cell[] = api.data;
+
+    dispatch({ type: ActionType.FETCH_CELLS_COMPLETE, payload: cells });
+  } catch (error) {
+    if (error instanceof Error) {
+      dispatch({ type: ActionType.FETCH_CELLS_ERROR, payload: error.message });
+    }
+  }
+};

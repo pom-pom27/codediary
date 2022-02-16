@@ -1,2 +1,1 @@
-declare const _default: () => void;
-export default _default;
+export declare const serve: (filename: string, port: number, dir: string, isProduction: boolean) => Promise<void>;
