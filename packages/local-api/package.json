@@ -1,6 +1,6 @@
 {
   "name": "@codediary/local-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@codediary/local-client": "^1.0.5",
+    "@codediary/local-client": "^1.0.6",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "http-proxy-middleware": "^2.0.2"
