@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "",
+  "main": "dist/index.js",
   "license": "ISC",
   "bin": "dist/index.js",
   "files": [
