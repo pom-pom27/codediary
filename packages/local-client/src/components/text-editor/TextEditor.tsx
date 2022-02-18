@@ -39,7 +39,7 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
   if (isEditing) {
     return (
       <div className="text-editor" ref={previewRef}>
-        <MDEditor value={cell.content} onChange={onChange} />
+        <MDEditor height={400} value={cell.content} onChange={onChange} />
       </div>
     );
   }
