@@ -1,4 +1,6 @@
-﻿# CodeDiary
+https://user-images.githubusercontent.com/40870452/173328954-3539c79c-60cd-49e6-a7b8-0fdc9d1695ed.mp4
+
+# CodeDiary
 
 This is an interactive coding environment. You can write javascript, see it excecuted and write comprehensive documention using markdown.
 - Add then click any text cell (including this one) to edit it.
