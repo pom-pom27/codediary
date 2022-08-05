@@ -8,7 +8,7 @@ This is an interactive coding environment. You can write javascript, see it exce
 -  Add new cell by hovering on the divider between each cell. All of your changes get saved to the file you named with or the default codenote1.js. You can change the file name by `run npx codediary serve filename.js`. 
 -  Can mostly import anything from npm using unpkg APi
 
-## Build With
+## Built With
 - React
 - Lerna, for managing and publishing multiple JavaScript/TypeScript packages from the same repository. 
 - esbuild-wasm as a bundler and typescript parser in the browseer
