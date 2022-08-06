@@ -17,6 +17,7 @@ This is an interactive coding environment. You can write javascript, see it exce
 - monaco-editor 
 - axios
 - React Redux
+- localForage
 - Commander, for creating node js CLI
 
 
