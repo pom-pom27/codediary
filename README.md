@@ -13,7 +13,7 @@ This is an interactive coding environment. You can write javascript, see it exce
 ## Built With
 - React
 - Lerna, for managing and publishing multiple JavaScript/TypeScript packages from the same repository. 
-- esbuild-wasm as a bundler and typescript parser in the browseer
+- esbuild-wasm as a bundler the browseer
 - monaco-editor 
 - axios
 - React Redux
