@@ -21,8 +21,6 @@ This is an interactive coding environment. You can write javascript, see it exce
 - Commander, for creating node js CLI
 
 
-
-
 ## Run
 ```
 npx -y codediary serve
